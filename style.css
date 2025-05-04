@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #83a5f2;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('bg.png'); /* replace with your actual image path */
+    background-size: cover; /* Makes it cover the whole screen */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps it from zooming with scroll */
+  }
+
+.cal-sans-regular {
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+  }
+
+
+.raleway-regular {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+      
+h1 {
+    font-family: 'Cal Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .container {
+    text-align: center;
+    background: #fcded6;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  
+    width: 90%;              /* Grow/shrink with screen size */
+    max-width: 600px;        /* Don't stretch too much */
+    min-width: 300px;        /* Don’t get too small on phones */
+    box-sizing: border-box;  /* Ensures padding doesn't blow up width */
+  }
+  
+  
+  .timer {
+    font-size: 4rem;
+    font-family: 'Cal Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .buttons button {
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ED583F;
+    color: white;
+    transition: background 0.3s;
+  }
+  
+  .buttons button:hover {
+    background: #f3a732;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20vh auto;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  #closeModal {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #ED583F;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  
