@@ -1,9 +1,9 @@
 let timer;
-let minutes = 25;
-let seconds = 0;
+let minutes = 0;
+let seconds = 30;
 let isRunning = false;
 let isWorkSession = true; // true = work, false = break
-const workDuration = 25; // minutes
+const workDuration = 0.5; // minutes
 const breakDuration = 5; // minutes
 
 
@@ -23,6 +23,7 @@ function showModal(message) {
     const modalText = document.getElementById("modalMessage");
   
     modalText.textContent = message;
+    console.log("Modal triggered with message:", message);
     modal.style.display = "block";
   }
   
@@ -39,9 +40,6 @@ function startTimer() {
         if (minutes === 0 && seconds === 0) {
             clearInterval(timer);
             isRunning = false;
-            
-            const alarm = document.getElementById('alarmSound');
-            alarm.play().catch(e => console.warn("Sound play blocked:", e));
           
             if (isWorkSession) {
               showModal("Work session complete! Time for a break.");
