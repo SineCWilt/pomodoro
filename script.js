@@ -1,9 +1,9 @@
 let timer;
-let minutes = 0;
-let seconds = 30;
+let minutes = 25;
+let seconds = 0;
 let isRunning = false;
 let isWorkSession = true; // true = work, false = break
-const workDuration = 0.5; // minutes
+const workDuration = 25; // minutes
 const breakDuration = 5; // minutes
 
 
